@@ -1,59 +1,42 @@
-# BookingFrontend
+# 🅰️ Enterprise Resource Booking System - Frontend Dashboard
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.10.
+ระบบหน้าบ้าน (Frontend UI) สำหรับโครงการ **Enterprise Resource Booking System** พัฒนาด้วย Angular และตกแต่งดีไซน์ด้วย Tailwind CSS ในรูปแบบ **NOC Dashboard (Network Operations Center)** เพื่อให้ผู้ดูแลระบบสามารถมอนิเตอร์และส่งคำขอจองทรัพยากรภายในองค์กรได้แบบ Real-time
 
-## Development server
+> ⚠️ **คำเตือนในการใช้งาน:** Repository นี้เป็นเพียงระบบหน้าบ้าน (UI) เท่านั้น จำเป็นต้องใช้งานร่วมกับระบบหลังบ้าน (Backend API) สามารถเข้าถึงซอร์สโค้ดฝั่งหลังบ้านได้ที่:
+> 🔗 **Backend Repository:** [https://github.com/EqrthX/Booking-System-Backend](https://github.com/EqrthX/Booking-System-Backend)
 
-To start a local development server, run:
+---
 
+## 🚀 คุณสมบัติเด่น (Core Features)
+* **Glassmorphism Design Theme:** ดีไซน์หน้าจอทันสมัย ใช้เอฟเฟกต์กระจกใสซ้อนทับแอนิเมชัน SVG พื้นหลังที่นุ่มนวล สบายตา และไม่รบกวนสมาธิผู้ใช้งาน
+* **3-Column Command Center Grid:** จัดวางเลย์เอาต์หน้าจออัจฉริยะ แบ่งสัดส่วนข้อมูลชัดเจนในหน้าเดียว:
+  1. **Meeting Rooms Status Monitor:** แสดงสถานะว่าง/ไม่ว่าง ของห้องประชุมทั้ง 10 ห้อง
+  2. **DB Servers Status Monitor:** แสดงสถานะการทำงานของเซิร์ฟเวอร์ทั้ง 10 เครื่อง
+  3. **Live Booking Logs Panel:** แสดงประวัติการทำรายการจองล่าสุดที่ถูกซิงค์ข้อมูลแบบเรียลไทม์
+* **Comprehensive Booking Form:** ฟอร์มรับข้อมูลจองทรัพยากรที่ใช้งานง่าย รองรับการกรอกชื่อ วันเวลา ประเภท และหมายเลขทรัพยากร
+* **Responsive Layout:** หน้าจอปรับขนาดการแสดงผลโดยอัตโนมัติ รองรับทั้งบนคอมพิวเตอร์ แท็บเล็ต และสมาร์ทโฟน
+
+---
+
+## 🛠️ เทคโนโลยีที่เลือกใช้ (Tech Stack)
+* **Frontend Framework:** Angular
+* **CSS Framework:** Tailwind CSS
+* **State Management/Services:** RxJS Observables (Real-time stream)
+
+---
+
+## ⚙️ ขั้นตอนการติดตั้งและเริ่มใช้งาน (Getting Started)
+
+1. **Clone Repository นี้ลงเครื่อง:**
 ```bash
-ng serve
+   git clone [https://github.com/EqrthX/Booking-System-Frontend.git](https://github.com/EqrthX/Booking-System-Frontend.git)
+   cd Booking-System-Frontend
 ```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
+2. **ติดตั้ง Dependencies ทั้งหมดผ่าน npm:
 ```bash
-ng generate component component-name
+   npm install
 ```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
+3. **เริ่มรันเซิร์ฟเวอร์สำหรับพัฒนาหน้าบ้าน:
 ```bash
-ng generate --help
+   ng serve
 ```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
